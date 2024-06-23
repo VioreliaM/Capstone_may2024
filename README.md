@@ -1,4 +1,4 @@
-## - CardioLife - 
+## - CardioLife - <img src="/Users/vioreliamagari/Desktop/capstone_may2024/images/logoCardioLife.png" alt="Image" width="150" style="float: right"/>
 #### A predictive model that forecasts the risk of having a cardiovascular disease
 =========================
 
@@ -43,6 +43,31 @@ Data dictionary:
 11. Active - if the patient is active or sedentary: 0-it's not active, 1- is active (type: int64)
 12. Cardio - if the patient has a cardiovascular disease: 0-no, 1-yes (type: int64)
  
+##### Exploratory Data Analysis findings
+After doing the Exploratory Data Analysis, we could find that: 
+* The older patients have a higher risk of having a CVD
+* Men has higher risk of having a CVD, compared to women
+* Being overweight and obese, makes you more prone to having a cardiovascular disease
+* Patients with a high blood pressure are more at risk to have a CVD
+* Having high cholesterol and glucose in the blood, increases the risk of having a CVD
+* Smoking and drinking alcohol doesn't influence too much the probability of having a CVD
+* Having an active lifestyle decreases the risk of having a CVD
+
+##### Baseline modelling 
+After doing data pre-processing, setup, splitting the train and test data, we built three models with parameters that were searched through GridSearch. We can see in the table bellow the models evaluation: 
+|                 | **Logistic regression** | **Decision Tree** | **K nearest neighbors** |
+|-----------------|-------------------------|-------------------|-------------------------|
+| **Train score** | 0.727                   | 0.731             | 0.743                    |
+| **Test score**  | 0.727                   | 0.733             | 0.725                    |
+| **Accuracy**    | 0.73                    | 0.73              | 0.73                    |
+| **Precision**   | 0.75                    | 0.76              | 0.74                    |
+| **Recall**      | 0.68                    | 0.68              | 0.69                    |
+| **F-1 score**   | 0.71                    | 0.73              | 0.72                    |
+| **Test AUC**    | 0.785                   | 0.788             | 0.782                   |
+| **Train AUC**   | 0.79                   | 0.793             | 0.817                   |
+In conclusion, the K Nearest Neighbors is the best model from the three initial models. 
+In the next step, we will build more advanced models, to see if we can get a better model with higher accuracy and less False Negative predictions. 
+
 ### Walkthrough Demo
 
 ...
@@ -51,25 +76,30 @@ Data dictionary:
 
 ### Project Flowchart
 
-...
-...
-...
+1. Description of the problem (Sprint 1)
+2. Data gathering (Sprint 1)
+3. Data cleaning (Sprint 1)
+4. Exploratory Data Analysis (Sprint 1)
+5. Data pre-processing (Sprint 2)
+6. Data Modelling (Sprint 2,3)
+7. Data Evaluation (Sprint 2,3)
+8. Visualization and communication (Sprint 3)
+9. Data deploying/ web app (Sprint 3)
+
 
 ### Project Organization
-
-...
-...
-...
+The project is organized in the following parts:
 
 * `data` 
-    - contains link to copy of the dataset (stored in a publicly accessible Google Drive folder)
-    - saved copy of aggregated / processed data as long as those are not too large (> 10 MB)
+    - the public dataset from kagle: `cardio_dataset`
+    - the cleaned dataset that it will be used for modelling: `cardio_ds`
 
 * `model`
     - joblib dump of final model / model object
 
 * `notebooks`
-    - contains all final notebooks involved in the project
+    - `01-data-cleaning-eda.ipynb` - Sprint 1, contains data cleaning and exploratory data analysis steps
+    - `02-pre-processing-base-modelling.ipynb` - Sprint 2, contains data pre-processing and baseline modelling
 
 * `reports`
     - contains final report which summarises the project
@@ -98,11 +128,6 @@ Data dictionary:
 * `LICENSE`
     - Project license
 
-### Dataset
-
-...
-...
-...
 
 ### Credits & References
 
