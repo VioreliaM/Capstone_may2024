@@ -1,7 +1,7 @@
 <p align="center"> <img width="150" style="float:right" alt="logoCardioLife" src="https://github.com/VioreliaM/Capstone_may2024/assets/170043188/4d3ffa2f-1dc4-4d6a-8540-20f9f49b44d2"> </p>
 
 ### <p align="center"> A predictive model that forecasts the risk of having a cardiovascular disease </p>
-====================================================================================================
+==============================================================
 
 ### Project Overview  
 #### Problem area
