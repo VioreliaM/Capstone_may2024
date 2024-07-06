@@ -99,6 +99,13 @@ On this example, we have an obese user, that has a high blood pressure and a hig
 
 This is another example, when we have a healthy user, and his risk of having a CVD is low!
 
+### Conclusion
+We reached our goal - to create a model with the highest accuracy and the lowest False Negative predictions, that will forecast the risk of having a cardiovascular disease. Now, users can check the app, by entering their data. CardioLife app, also display the recommendations, on how to minimaze the risk. 
+For the next steps: 
+* we can do more recommendations and insert links where the users can click, to inform themselves more on the risks they have
+* we can improve the web app's design
+* we can deploy the app and share it 
+
 ### Project Flowchart
 
 1. Description of the problem (Sprint 1)
