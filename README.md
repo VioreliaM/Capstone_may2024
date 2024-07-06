@@ -1,10 +1,9 @@
 <p align="center"> <img width="150" style="float:right" alt="logoCardioLife" src="https://github.com/VioreliaM/Capstone_may2024/assets/170043188/4d3ffa2f-1dc4-4d6a-8540-20f9f49b44d2"> </p>
 
 ### <p align="center"> A predictive model that forecasts the risk of having a cardiovascular disease </p>
-==============================================================
 
 ### Project Overview  
-#### Problem area
+#### Problem area :anatomical_heart:
 According to the World Health Organization, cardiovascular diseases (CVD) are the leading cause of global death, representing between 31-32% of global deaths. 
 The area of interest is the prevention of cardiovascular diseases, by predicting the risk of having a CVD and by making recommendations on how to minimize the risk. It is primordial to detect the population with the higher risk of CVD and prevent the apparition of the disease, by adjusting and changing the lifestyle of the population at risk and by implementing preventive measures such as taking medication, or treating the conditions that will further lead to CDV. 
 
